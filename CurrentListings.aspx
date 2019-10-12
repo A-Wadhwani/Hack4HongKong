@@ -14,7 +14,4 @@
             </asp:TableCell>
         </asp:TableRow>
     </asp:Table>
-    <select runat="server" id="companyList">
-
-    </select>
 </asp:Content>
