@@ -14,15 +14,7 @@ namespace Hack4HongKong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            string filePath = @"C:\Users\Aryan Wadhwani\source\repos\Hack4HongKong\TestImages\blizzard.webp";
-            var image = Image.FromFile(filePath);
-            var client = ImageAnnotatorClient.Create();
-            var response = client.DetectLogos(image);
-            foreach (var annotation in response)
-            {
-                if (annotation.Description != null)
-                    Console.WriteLine(annotation.Description);
-            }
+
         }
     }
 }
