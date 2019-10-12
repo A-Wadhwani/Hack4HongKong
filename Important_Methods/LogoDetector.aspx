@@ -5,8 +5,8 @@
             <div>
                <label for="file">Choose file to upload</label>
                 <div  class="custom-file">
-                    <asp:FileUpload CssClass="input-group-addon input-lg" runat="server" ID="upload" Width="393px" />
-                    <input type="file" id="fileup" class="custom-file-input" name="file" accept="image/*" runat="server"/>
+                    
+                    <input type="file" id="fileup" class="input-group-addon input-lg" name="file" accept="image/*" runat="server"/>
                 </div>
             </div>
             <div>
@@ -15,15 +15,7 @@
             <br />
             <asp:Literal runat="server" id="txtValueA" EnableViewState="false" />
     </div>
-    
-    
-    <div class="input-group mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text">Upload</span>
-  </div>
-  <div class="custom-file">
-    <input type="file" class="custom-file-input" id="inputGroupFile01">
-    <label class="custom-file-label" for="inputGroupFile01">Choose file</label>
-  </div>
-</div>
+    <div class="alert alert-danger" runat="server" id="failedAlert" role="alert">
+      Please Select a File
+    </div>
 </asp:Content>

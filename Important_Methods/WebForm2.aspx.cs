@@ -11,21 +11,22 @@ namespace Hack4HongKong.Important_Methods
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            failedAlert.Visible = false;
         }
 
         protected void Unnamed_Click(object sender, EventArgs e)
         {
             string path = MapPath(@"~/LogoImages/image.jpg");
-            if (fileup.PostedFile.ContentLength > 0)
+            txtValueA.Text = "";
+            if (upload.PostedFile.ContentLength > 0)
             {
+                failedAlert.Visible = false;
 
-                fileup.PostedFile.SaveAs(path);
-                string fileName = fileup.PostedFile.FileName;
+                upload.PostedFile.SaveAs(path);
+                string fileName = upload.PostedFile.FileName;
                 var allCompaniesWithinPicture = Important_Methods.CheckforLogo.CompaniesFoundInPicture(path);
 
 
-                txtValueA.Text = "";
                 for (int x = 0; x < allCompaniesWithinPicture.Length; x++)
                 {
                     /*TableRow tr = new TableRow();
@@ -62,7 +63,7 @@ namespace Hack4HongKong.Important_Methods
             }
             else
             {
-
+                failedAlert.Visible = true;
             }
         }
     }
