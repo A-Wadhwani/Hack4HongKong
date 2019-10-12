@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="WebForm2.aspx.cs" Inherits="Hack4HongKong.Important_Methods.WebForm2" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" MasterPageFile="~/Site.Master" CodeBehind="WebForm2.aspx.cs" Inherits="Hack4HongKong.Important_Methods.WebForm2" %>
 
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <div>
