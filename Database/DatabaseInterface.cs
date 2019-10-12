@@ -5,19 +5,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace CloudTestApp
+namespace Hack4HongKong
 {
     public class DatabaseInterface : DatabaseQueries
     {
         public static DatabaseObjectTemplate[] GetAllCompanies()
         {
-            
-            var response = GetData("Companies");
-            object json = JsonConvert.DeserializeObject(response.Body);
+            try
+            {
+                var response = GetData("Companies");
+                object json = JsonConvert.DeserializeObject(response.Body);
 
-            var output = ((JToken)json).ToObject<DatabaseObjectTemplate[]>();
+                List<DatabaseObjectTemplate> output = new List<DatabaseObjectTemplate>();
+                foreach (var token in ((JToken)json).Children())
+                {
+                    output.Add(token.ToObject<DatabaseObjectTemplate>());
+                }
+                //var output = ((JToken)json).ToObject<DatabaseObjectTemplate[]>();
+                for(int x = 0; x < output.Count(); x++)
+                    if (output[x] == null)
+                        output.RemoveAt(x);
 
-            return output;
+                return output.ToArray();
+            }
+            catch
+            {
+                return null;
+            }
         }
         public static void CreateNewCompany(string companyName, string description, string[] tags)
         {
@@ -30,7 +44,7 @@ namespace CloudTestApp
                 CompanyID = newID
             };
 
-            InsertData("Companies/" + newItem.CompanyID, newItem);
+            InsertData("Companies/" + newID, newItem);
         }
 
         public static void DeleteCompany(int companyID)
@@ -77,13 +91,17 @@ namespace CloudTestApp
         {
             var allCompanies = GetAllCompanies();
             int maxID = 0;
-            for(int x = 0; x < allCompanies.Length; x++)
+            try
             {
-                if (allCompanies[x].CompanyID > maxID)
-                    maxID = allCompanies[x].CompanyID;
-            }
+                for (int x = 0; x < allCompanies.Length; x++)
+                {
+                    if (allCompanies[x].CompanyID > maxID)
+                        maxID = allCompanies[x].CompanyID;
+                }
+            } catch { }
             return maxID;
         }
+
     }
     public class DatabaseObjectTemplate
     {
