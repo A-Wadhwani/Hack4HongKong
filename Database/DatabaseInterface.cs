@@ -35,6 +35,12 @@ namespace Hack4HongKong
         }
         public static void CreateNewCompany(string companyName, string description, string[] tags)
         {
+            var allCompanies = GetAllCompanies();
+            for (int x = 0; x < allCompanies.Length; x++)
+                if (allCompanies[x].CompanyName.ToLower() == companyName.ToLower())
+                    throw new Exception("Company has already been added");
+
+
             int newID = GetCurrentHighestID() + 1;
             DatabaseObjectTemplate newItem = new DatabaseObjectTemplate
             {

@@ -53,6 +53,7 @@
                         <li><a runat="server" href="~/">Home</a></li>
                         <li><a runat="server" href="~/About">About</a></li>
                         <li><a runat="server" href="~/SubmitCompany">Submit a Company</a></li>
+                        <li><a runat="server" href="~/CurrentListings">View all Current Companies</a></li>
                     </ul>
                 </div>
             </div>

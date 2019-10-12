@@ -179,6 +179,7 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
+    <Content Include="CurrentListings.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -243,6 +244,13 @@
     </Compile>
     <Compile Include="Contact.aspx.designer.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CurrentListings.aspx.cs">
+      <DependentUpon>CurrentListings.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CurrentListings.aspx.designer.cs">
+      <DependentUpon>CurrentListings.aspx</DependentUpon>
     </Compile>
     <Compile Include="Database\DatabaseInterface.cs" />
     <Compile Include="Database\DatabaseQueries.cs" />
