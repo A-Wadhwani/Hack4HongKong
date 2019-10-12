@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hack4HongKong.Important_Methods
-{
-
-
-    public partial class WebForm2
-    {
-
+namespace Hack4HongKong.Important_Methods {
+    
+    
+    public partial class WebForm2 {
+        
         /// <summary>
         /// form1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Hack4HongKong.Important_Methods
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
-
+        
         /// <summary>
         /// fileup control.
         /// </summary>
@@ -31,5 +29,14 @@ namespace Hack4HongKong.Important_Methods
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputFile fileup;
+        
+        /// <summary>
+        /// txtValueA control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal txtValueA;
     }
 }
