@@ -12,9 +12,10 @@ namespace Hack4HongKong
         protected void Page_Load(object sender, EventArgs e)
         {
             var allCompanies = DatabaseInterface.GetAllCompanies();
+            txtValueA.Text = "";
             for (int x = 0; x < allCompanies.Length; x++)
             {
-                TableRow tr = new TableRow();
+                /*TableRow tr = new TableRow();
 
                 TableCell nameCell = new TableCell();
                 nameCell.Text = allCompanies[x].CompanyName;
@@ -25,12 +26,27 @@ namespace Hack4HongKong
 
                 TableCell descCell = new TableCell();
                 descCell.Text = allCompanies[x].Description;
-                tr.Cells.Add(descCell);
+                tr.Cells.Add(descCell);*/
 
 
-                mainTable.Rows.Add(tr);
+
+                //protected string companyName = allCompanies[x].CompanyName;
+                txtValueA.Text +=
+                   "<div class=\"panel panel-primary\">" +
+                       "<div class=\"panel-heading\">" +
+                           " " + allCompanies[x].CompanyName + " " +
+                       "</div>" +
+                       "<div class=\"panel-body\">" +
+                           " "+ allCompanies[x].Description + " " +
+                        "</div>" +
+                    "</div>";
+
+
+
+               // mainTable.Rows.Add(tr);
+                //companyList.Items.Add(allCompanies[x].CompanyName);
             }
-            //companyList.Items.Add();
+            
         }
     }
 }
