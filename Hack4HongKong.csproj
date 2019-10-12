@@ -172,6 +172,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="Camera.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -195,7 +196,7 @@
     <Content Include="WebCamCapture.aspx" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Important_Methods\WebForm1.aspx" />
-    <Content Include="Important_Methods\LogoDetector.aspx" />
+    <Content Include="Important_Methods\WebForm2.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -233,6 +234,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Camera.aspx.cs">
       <DependentUpon>Camera.aspx</DependentUpon>
@@ -275,12 +283,12 @@
     <Compile Include="Important_Methods\WebForm1.aspx.designer.cs">
       <DependentUpon>WebForm1.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Important_Methods\LogoDetector.aspx.cs">
-      <DependentUpon>LogoDetector.aspx</DependentUpon>
+    <Compile Include="Important_Methods\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Important_Methods\LogoDetector.aspx.designer.cs">
-      <DependentUpon>LogoDetector.aspx</DependentUpon>
+    <Compile Include="Important_Methods\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
@@ -321,7 +329,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="LogoImages\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
