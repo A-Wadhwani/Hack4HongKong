@@ -17,7 +17,8 @@ namespace Hack4HongKong.Important_Methods
         protected void snap_Click(object sender, EventArgs e)
         {
             String s = myimage.Src;
-            
+            s = s.Replace("..", "~");
+            string s1 = Important_Methods.CheckforLogo.getMatches(s)[0];
         }
     }
 }

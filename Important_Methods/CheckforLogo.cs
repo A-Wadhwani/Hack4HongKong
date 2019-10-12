@@ -14,6 +14,7 @@ namespace Hack4HongKong.Important_Methods
         public static List<string> getMatches(string filePath)
         {
             var output = new List<string>();
+           
             var image = Image.FromFile(filePath);
             var client = ImageAnnotatorClient.Create();
             var response = client.DetectLogos(image);
