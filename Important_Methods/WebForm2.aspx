@@ -3,13 +3,14 @@
 <asp:Content runat="server" ContentPlaceHolderID="MainContent">
     <div>
             <div>
-               <label for="file">Choose file to upload</label>
+                <br />
+               <asp:Label runat="server" Font-Size="XX-Large" Text="Take a Photo of the Logo to see if a Company is on the Boycott List"></asp:Label>
                 <div  class="custom-file">
-                    <asp:FileUpload CssClass="input-group-addon input-lg" runat="server" ID="upload" Width="393px" />
+                    <asp:FileUpload CssClass="input-group-addon input-lg" runat="server" ID="upload" Width="556px" />
                 </div>
             </div>
             <div>
-                <asp:button Text="Submit" runat="server" OnClick="Unnamed_Click"></asp:button>
+                <asp:button Text="Submit" CssClass="btn btn-primary" runat="server" OnClick="Unnamed_Click"></asp:button>
             </div>
             <br />
             <asp:Literal runat="server" id="txtValueA" EnableViewState="false" />
