@@ -11,10 +11,10 @@
             <p class="text-center">Fair minded, big hearted people hold the majority of power. <br>
               Boycott corporations that remain silent over China's authoritarian takeover of Hong Kong.&nbsp;</p>
             <div class="container-fluid text-center">
-              <button type="button" class="btn btn-lg btn-primary" style="background-color: ">Check your Company</button>
+                <a class="btn btn-lg btn-primary" href="Important_Methods/WebForm2.aspx" role="button">Check your Company</a>
             </div>
-			  <br> 
-			  </br>
+			  <br /> 
+			  <br />
             <div class="container-fluid">
                 <img src="../TestImages/191002-hong-kong-ap-773.jpg" alt="" class="img-responsive"> 
             </div>
