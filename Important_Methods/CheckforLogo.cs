@@ -30,7 +30,6 @@ namespace Hack4HongKong.Important_Methods
             var allCompanies = DatabaseInterface.GetAllCompanies();
 
             List<DatabaseObjectTemplate> output = new List<DatabaseObjectTemplate>();
-
             for(int x = 0; x < allCompanies.Length; x++)
             {
                 for(int y = 0; y < matches.Count(); y++)

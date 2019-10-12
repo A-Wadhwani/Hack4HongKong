@@ -15,6 +15,31 @@
         </asp:TableRow>
     </asp:Table>
     -->
+    <br />
+    <div style="align-content:center; align-items:center">
+        <asp:Label runat="server" Text="Companies To Boycott" Font-Bold="true" Font-Size="XX-Large"></asp:Label>
+    </div>
+    
+    <br />
+    <br />
+
+    <div class="row">
+        <div class="col-sm-2" style="text-align:right">
+            <asp:Label runat="server" Text=""></asp:Label>
+        </div>
+
+        <div class="col-sm-2 offset col-md-8" style="text-align:right">
+            <asp:TextBox runat="server" ID="searchTextBox"></asp:TextBox>
+        </div>
+        <div class="col-sm-1" style="text-align:left">
+            <asp:Button runat="server" ID="searchBtn" Text="Search" OnClick="searchBtn_Click" />
+        </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+
     <asp:Literal runat="server" id="txtValueA" EnableViewState="false" />
     <!--
     <div class="panel panel-primary">

@@ -28,12 +28,12 @@
         <div class="text-center col-md-6 col-12">
           <h3>Want to report a company?</h3>
           <p>Fill the form below to add a company to the boycott list.</p>
-          <a class="btn btn-info btn-lg" href="#" role="button">Report a Company</a>
+          <a class="btn btn-info btn-lg" href="SubmitCompany.aspx" role="button">Report a Company</a>
         </div>
         <div class="text-center col-md-6 col-12">
           <h3>See Companies on the List&nbsp; </h3>
           <p>View a list of companies that are complicit in China's authoritarian actions</p>
-          <a class="btn btn-danger btn-lg" href="#" role="button">Company List</a>
+          <a class="btn btn-danger btn-lg" href="CurrentListings.aspx" role="button">Company List</a>
         </div>
       </div>
     </div>
