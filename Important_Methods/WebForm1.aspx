@@ -10,7 +10,7 @@
     <form id="form1" runat="server">
         <div>
             <video id="video" width="640" height="480"  autoplay></video>
-            <button id="snap" type="button">Snap Photo</button>
+            <asp:Button id="snap" type="button" runat="server" Text="Snap Photo" OnClick="snap_Click"></asp:Button>
             <canvas id="canvas" width="640" height="480"></canvas>
             <img id="myimage" src="../TestImages/Google.jpg" runat="server"/>
             <script>
@@ -36,6 +36,7 @@
                             //video.src = window.URL.createObjectURL(stream);
                             video.srcObject = stream;
                             video.play();
+                            myimage.src = context.toDataURL();
                         });
                     }
                     // Trigger photo take
