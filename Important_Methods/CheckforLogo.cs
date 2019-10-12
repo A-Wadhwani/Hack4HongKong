@@ -24,5 +24,27 @@ namespace Hack4HongKong.Important_Methods
             }
             return output;
         }
+        public static DatabaseObjectTemplate[] CompaniesFoundInPicture(string filePath)
+        {
+            var matches = getMatches(filePath);
+            var allCompanies = DatabaseInterface.GetAllCompanies();
+
+            List<DatabaseObjectTemplate> output = new List<DatabaseObjectTemplate>();
+
+            for(int x = 0; x < allCompanies.Length; x++)
+            {
+                for(int y = 0; y < matches.Count(); y++)
+                {
+                    if(allCompanies[x].CompanyName == matches[y])
+                    {
+                        //if it already contains is don't add it again
+                        if (!output.Contains(allCompanies[x]))
+                            output.Add(allCompanies[x]);
+                    }
+
+                }
+            }
+            return output.ToArray();
+        }
     }
 }
