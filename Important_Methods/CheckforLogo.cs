@@ -11,7 +11,7 @@ namespace Hack4HongKong.Important_Methods
 {
     public static class CheckforLogo
     {
-        public static List<string> getMatches(string filePath = @"C:\Users\Aryan Wadhwani\source\repos\Hack4HongKong\TestImages\blizzard.webp")
+        public static List<string> getMatches(string filePath)
         {
             var output = new List<string>();
             var image = Image.FromFile(filePath);
