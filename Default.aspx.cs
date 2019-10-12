@@ -11,7 +11,10 @@ namespace Hack4HongKong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            DatabaseInterface.ConnectToDatabase();
 
+            string[] tags = { "tag1", "tag2", "tag3" };
+            DatabaseInterface.CreateNewCompany("Google", "This is the description", tags);
         }
     }
 }
