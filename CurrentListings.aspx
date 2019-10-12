@@ -16,8 +16,8 @@
     </asp:Table>
     -->
     <br />
-    <div style="align-content:center; align-items:center">
-        <asp:Label runat="server" Text="Companies To Boycott" Font-Bold="true" Font-Size="XX-Large"></asp:Label>
+    <div style="align-content:center; align-items:center; text-align:center">
+        <asp:Label runat="server" Text="Companies to Boycott" Font-Bold="true" Font-Size="32"></asp:Label>
     </div>
     
     <br />

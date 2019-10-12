@@ -44,7 +44,7 @@ namespace Hack4HongKong.Important_Methods
                 txtValueA.Text +=
                    "<div class=\"panel panel-primary\">" +
                        "<div class=\"panel-heading\">" +
-                           " " + allCompaniesWithinPicture[x].CompanyName + " " +
+                           " <b>" + allCompaniesWithinPicture[x].CompanyName + "</b> " +
                        "</div>" +
                        "<div class=\"panel-body\">" +
                            " " + allCompaniesWithinPicture[x].Description + " " +

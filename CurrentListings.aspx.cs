@@ -38,7 +38,7 @@ namespace Hack4HongKong
                 txtValueA.Text +=
                    "<div class=\"panel panel-primary\">" +
                        "<div class=\"panel-heading\">" +
-                           " " + data[x].CompanyName + " " +
+                           " <b>" + data[x].CompanyName + "</b> " +
                        "</div>" +
                        "<div class=\"panel-body\">" +
                            " " + data[x].Description + " " +
