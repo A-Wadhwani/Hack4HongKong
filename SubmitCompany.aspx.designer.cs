@@ -31,6 +31,15 @@ namespace Hack4HongKong {
         protected global::System.Web.UI.WebControls.TextBox descTextBox;
         
         /// <summary>
+        /// submitBtn control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button submitBtn;
+        
+        /// <summary>
         /// tagSubmissionTextBox control.
         /// </summary>
         /// <remarks>
@@ -65,14 +74,5 @@ namespace Hack4HongKong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button removeTagFromListBox;
-        
-        /// <summary>
-        /// submitBtn control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitBtn;
     }
 }

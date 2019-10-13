@@ -35,21 +35,17 @@
         pushNewVote(x);
     }
     function pushNewVote(currentVoteValue) {
-
-        console.log("made it to 1:" + currentVoteValue);
+        
         var target;
         var allData = fb.database().ref("Companies").once("value");
         for (var x = 0; x < allData.length; x++) {
             if (allData[x].ID == currentVoteValue)
                 target = allData[x].approved;
         }
-        console.log("made it to 2:" + currentVoteValue);
 
 
         return fb.database()
             .ref("Companies/" + currentVoteValue + "/Approved")
             .set("true");
-        
-        console.log("made it to 3???");
     }
 </script>
