@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Hack4HongKong.SiteMaster" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Hack4HongKong.Site" %>
 
 <!DOCTYPE html>
 
@@ -17,7 +17,7 @@
 
 </head>
 <body>
-    <form runat="server" style="margin-top:-50px">
+    <form runat="server" style="margin-top:-49px">
         <asp:ScriptManager runat="server">
             <Scripts>
                 <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
