@@ -24,12 +24,12 @@ namespace Hack4HongKong.Important_Methods
 
                 upload.PostedFile.SaveAs(path);
                 string fileName = upload.PostedFile.FileName;
-                var allCompaniesWithinPicture = Important_Methods.CheckforLogo.CompaniesFoundInPicture(path);
+               /* var allCompaniesWithinPicture = Important_Methods.CheckforLogo.CompaniesFoundInPicture(path);
 
 
                 for (int x = 0; x < allCompaniesWithinPicture.Length; x++)
                 {
-                    /*TableRow tr = new TableRow();
+                    TableRow tr = new TableRow();
 
                     TableCell nameCell = new TableCell();
                     nameCell.Text = allCompanies[x].CompanyName;
@@ -40,7 +40,7 @@ namespace Hack4HongKong.Important_Methods
 
                     TableCell descCell = new TableCell();
                     descCell.Text = allCompanies[x].Description;
-                    tr.Cells.Add(descCell);*/
+                    tr.Cells.Add(descCell);
 
 
 
@@ -64,6 +64,7 @@ namespace Hack4HongKong.Important_Methods
             else
             {
                 failedAlert.Visible = true;
+    */
             }
         }
     }

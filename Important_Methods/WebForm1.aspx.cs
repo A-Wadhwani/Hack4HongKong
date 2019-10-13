@@ -18,7 +18,7 @@ namespace Hack4HongKong.Important_Methods
         {
             String s = myimage.Src;
             s = s.Replace("..", "~");
-            string s1 = Important_Methods.CheckforLogo.getMatches(s)[0];
+            //string s1 = Important_Methods.CheckforLogo.getMatches(s)[0];
         }
     }
 }
