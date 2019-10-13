@@ -174,6 +174,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="191002-hong-kong-ap-773.jpg" />
     <Content Include="About.aspx" />
     <Content Include="AccessPage.aspx" />
     <Content Include="Camera.aspx" />
@@ -223,6 +224,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Login.aspx" />
+    <Content Include="blizzard.webp" />
+    <Content Include="My Project 47807-3e6bf2f7f02f.json" />
+    <None Include="Properties\PublishProfiles\Hack4HongKong - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Important_Methods\WebForm1.aspx" />
     <Content Include="Important_Methods\WebForm2.aspx" />

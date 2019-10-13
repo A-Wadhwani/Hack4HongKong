@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "fourth-jigsaw-255708",
+  "private_key_id": "3e6bf2f7f02fe5c7ca27a0eddb573fbd47e9dc44",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQClOQ1va7ydMABf\nn1ZIyTJeh97GOeURxpZzTCifSY/C7K13tCXMcN/BmpzC9tOaYaWRPJI4uvtBgJAv\nf1oMSxlMeaQa340JoQilPhE+CU7z+EYycinJ+eRkIF0aB6Ccc8PyCUi3nK2rzGeM\nabzJsVxg/VnsUrAE0qN2FSc3pjEic0dNvMSeLycQ4zsuq2sd6k2rdTU9iqPNkY7q\nu/94OEyCc/bKSpuwd+uBUJg6vAVfH4ze8Q02h1Y9a0PTZUbCkmVkNvuo6+yKSa2z\n+Cpq996cKMmiGRL7i24TcyCFRKpGm9ROhs6qIPgdHUEfovfgZRSrTomkG3QySTtg\nsxS2yiVXAgMBAAECggEAEgA0xAUSEB1uNPzS9ZbMtjrfB8Fqq8nzPfg4BsleGyfB\nFc/FPHsMYyH5XqPDVchktahKlVldzXr4eoxJScSW1YZSiEZUgzjjDGnGOXg3J2J5\nzL4zv63KTH8FgF6rXiWeCA0rOddH8/XkTt/S8eCGcYoOFYQZaZ/Er7VJ8rNYcBRq\nkH48xPxKLPsiWh0s+hxmIVjV997FENW5xoWIX4najPG0SS/d4j4JYBK/pwN7zsAD\nTIcUJFIUcPQqtZx+njHFN5G5+nKQC1CcJUPIQBOP4qsVf4MegBRaDpd1kJjfSLht\nyPwgT039J3l3/djrvOb/ZBV2OnzNjGc8vtnbO68X8QKBgQDemravRwGIBjAWuzcq\nCLbflSTdnqWjX5lApdSzWHtrO2R5GqJM6gV9aI1+XMPyZdUJJvhsNnjeuYddosKw\nizFKtAT/r/MI7f5CXkyr8Nx9cVXaYEad7hvC0WvuCI/VnV7O/PTWHu9OcwrJ4e7p\nc7REThP8g/ZwnIL6Mo12TqIlRwKBgQC+Ao9WzpkfSTqoHTUf+UmUL0TjQbh96b/s\nEcoM9ylT4nPRmWYenrliyv9VM4Ewt8Ttt9OCK3kfJB2civqG90DbcUS1xWhN3eUf\n6lI00i6M9D57sRz3YoKKe98GExcV5Kn0mh95XitRcrdEg9FpTTb9ulbuGWKUQ7Uc\nfjRElJdHcQKBgQDM/G+KDLsORZR2+kOcQ5YTYcYnBvbE8T2w2IR7+tj8MB8fnjUi\n2sXfbC4P1ODkEH4TBX3yOF8pynMq+LyL0kG75vZLdf05ld9zwl6cXxrLsVg71jhx\nKlkKF8tp0RySu24Y8buMicQY27ttmM5m0BOKatPgzqxbmuTJ/U9jSJnr9QKBgQCm\nZHl/zDYdRrR+Ke2uzVBY2zgZRyE36m3uXfmxdvQTCHjiMNJTuC2iTSBiTVMyBYwH\nnHY1RLqxwZ/IyY/why+du8gu4eugXNPcKgfJR9IKD410Jjq2jObCPQ2mNSt/OZp3\noEw1rXiDv9CryD+nVj303axon4RLUCuXAxHkiLcdkQKBgCuCgipNb+556b3Y6BRD\n7bpEhjxLMZp2YZrlvI3w2rVW79U6vOzTSrxct4xzd6/VUnEMVNKe62gFX80boXww\n//Zax59xpKU1DnG+HrzvlD/7nQK72CYYBno7nHsCqwE2dT3py+ho2d806doWhcAy\nI/OHReT2gAj4foEZuj19lQgR\n-----END PRIVATE KEY-----\n",
+  "client_email": "wadhwani@fourth-jigsaw-255708.iam.gserviceaccount.com",
+  "client_id": "103047872514640952645",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/wadhwani%40fourth-jigsaw-255708.iam.gserviceaccount.com"
+}
