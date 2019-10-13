@@ -111,6 +111,7 @@ namespace Hack4HongKong
     }
     public class DatabaseObjectTemplate
     {
+        public bool Approved { get; set; }
         public string CompanyName { get; set; }
         public int CompanyID { get; set; }
         public string Description { get; set; }
