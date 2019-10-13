@@ -16,7 +16,7 @@
 			  <br /> 
 			  <br />
             <div class="container-fluid">
-                <img src="../TestImages/191002-hong-kong-ap-773.jpg" alt="" class="img-responsive"> 
+                <img src="../TestImages/191002-hong-kong-ap-773.jpg" alt="." class="img-fluid"> 
             </div>
             
           </div>
