@@ -35,7 +35,7 @@ namespace Hack4HongKong.Important_Methods
             {
                 for(int y = 0; y < matches.Count(); y++)
                 {
-                    if(allCompanies[x].CompanyName == matches[y])
+                    if(allCompanies[x].CompanyName.Equals(matches[y]))
                     {
                         //if it already contains is don't add it again
                         if (!output.Contains(allCompanies[x]))
