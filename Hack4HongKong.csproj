@@ -176,6 +176,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="Camera.aspx" />
+    <Content Include="CheckCompany.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-grid.css" />
     <Content Include="Content\bootstrap-grid.min.css" />
@@ -271,6 +272,13 @@
     </Compile>
     <Compile Include="Camera.aspx.designer.cs">
       <DependentUpon>Camera.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CheckCompany.aspx.cs">
+      <DependentUpon>CheckCompany.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CheckCompany.aspx.designer.cs">
+      <DependentUpon>CheckCompany.aspx</DependentUpon>
     </Compile>
     <Compile Include="Contact.aspx.cs">
       <DependentUpon>Contact.aspx</DependentUpon>
