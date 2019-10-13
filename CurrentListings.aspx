@@ -15,12 +15,11 @@
         </asp:TableRow>
     </asp:Table>
     -->
-    <br />
+    <div class="jumbotron">
     <div style="align-content:center; align-items:center; text-align:center">
-        <asp:Label runat="server" Text="Companies to Boycott" Font-Bold="true" Font-Size="32"></asp:Label>
+        <asp:Label runat="server" Text="Companies to Boycott" Font-Bold="true" Font-Size="XX-Large"></asp:Label>
     </div>
-    
-    <br />
+
     <br />
 
     <div class="row">
@@ -35,9 +34,8 @@
             <asp:Button runat="server" ID="searchBtn" Text="Search" OnClick="searchBtn_Click" />
         </div>
     </div>
-    
-    <br />
-    <hr />
+
+        <br />
 
     <asp:Literal runat="server" id="txtValueA" EnableViewState="false" />
     <!--
@@ -66,4 +64,5 @@
         Select all
     </button>
     -->
+        </div>
 </asp:Content>

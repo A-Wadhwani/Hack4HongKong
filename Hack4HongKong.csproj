@@ -175,6 +175,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="AccessPage.aspx" />
     <Content Include="Camera.aspx" />
     <Content Include="CheckCompany.aspx" />
     <Content Include="Contact.aspx" />
@@ -258,6 +259,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccessPage.aspx.cs">
+      <DependentUpon>AccessPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessPage.aspx.designer.cs">
+      <DependentUpon>AccessPage.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
       <DependentUpon>About.aspx</DependentUpon>

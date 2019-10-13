@@ -22,6 +22,15 @@ namespace Hack4HongKong {
         protected global::System.Web.UI.WebControls.TextBox companyNameTxtBox;
         
         /// <summary>
+        /// alternativeTxtBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox alternativeTxtBox;
+        
+        /// <summary>
         /// descTextBox control.
         /// </summary>
         /// <remarks>
@@ -38,6 +47,15 @@ namespace Hack4HongKong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button submitBtn;
+        
+        /// <summary>
+        /// successAlert control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl successAlert;
         
         /// <summary>
         /// tagSubmissionTextBox control.

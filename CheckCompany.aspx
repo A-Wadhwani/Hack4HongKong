@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="CheckCompany.aspx.cs" Inherits="Hack4HongKong.CheckCompany" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-      <body>
+  <div class="jumbotron">
     <div class="container mt-2">
       <div class="row">
         <div class="col-12">
@@ -55,5 +55,5 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.3.1.js"></script>
-  </body>
+  </div>
 </asp:Content>

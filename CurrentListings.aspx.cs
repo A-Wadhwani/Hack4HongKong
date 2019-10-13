@@ -19,36 +19,39 @@ namespace Hack4HongKong
             txtValueA.Text = "";
             for (int x = 0; x < data.Length; x++)
             {
-                /*TableRow tr = new TableRow();
+                if (data[x].Approved == true)
+                {
+                    /*TableRow tr = new TableRow();
 
-                TableCell nameCell = new TableCell();
-                nameCell.Text = allCompanies[x].CompanyName;
-                tr.Cells.Add(nameCell);
-
-
-                tr.Cells.Add(new TableCell());
-
-                TableCell descCell = new TableCell();
-                descCell.Text = allCompanies[x].Description;
-                tr.Cells.Add(descCell);*/
+                    TableCell nameCell = new TableCell();
+                    nameCell.Text = allCompanies[x].CompanyName;
+                    tr.Cells.Add(nameCell);
 
 
+                    tr.Cells.Add(new TableCell());
 
-                //protected string companyName = allCompanies[x].CompanyName;
-                txtValueA.Text +=
-                   "<div class=\"card\">" +
-                       "<div class=\"card bg-primary text-white\">" +
-                           " <b>" + data[x].CompanyName + "</b> " +
-                       "</div>" +
-                       "<div class=\"card-body\">" +
-                           " " + data[x].Description + " " +
-                        "</div>" +
-                    "</div>";
+                    TableCell descCell = new TableCell();
+                    descCell.Text = allCompanies[x].Description;
+                    tr.Cells.Add(descCell);*/
 
 
 
-                // mainTable.Rows.Add(tr);
-                //companyList.Items.Add(allCompanies[x].CompanyName);
+                    //protected string companyName = allCompanies[x].CompanyName;
+                    txtValueA.Text +=
+                       "<div class=\"card\">" +
+                           "<div class=\"card bg-primary text-white\">" +
+                               " <b>" + data[x].CompanyName + "</b> " +
+                           "</div>" +
+                           "<div class=\"card-body\">" +
+                               " " + data[x].Description + " " +
+                            "</div>" +
+                        "</div>";
+
+
+
+                    // mainTable.Rows.Add(tr);
+                    //companyList.Items.Add(allCompanies[x].CompanyName);
+                }
             }
         }
         private DatabaseObjectTemplate[] SortCompanies(string name)
