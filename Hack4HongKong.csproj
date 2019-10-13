@@ -224,6 +224,7 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Login.aspx" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="blizzard.webp" />
     <Content Include="My Project 47807-3e6bf2f7f02f.json" />
     <None Include="Properties\PublishProfiles\Hack4HongKong - Web Deploy.pubxml" />
