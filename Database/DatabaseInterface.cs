@@ -22,7 +22,7 @@ namespace Hack4HongKong
                     output.Add(token.ToObject<DatabaseObjectTemplate>());
                 }
                 //var output = ((JToken)json).ToObject<DatabaseObjectTemplate[]>();
-                for(int x = 0; x < output.Count(); x++)
+                for(int x = output.Count() - 1; x >= 0; x--)
                     if (output[x] == null)
                         output.RemoveAt(x);
 

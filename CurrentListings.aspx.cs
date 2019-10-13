@@ -111,6 +111,9 @@ namespace Hack4HongKong
             {
                 mainOutput.AddRange(lists[x].output);
             }
+            for (int x = 0; x < mainOutput.Count(); x++)
+                if (mainOutput[x] == null)
+                    mainOutput.RemoveAt(x);
 
             return mainOutput.ToArray();
         }
