@@ -33,7 +33,7 @@ namespace Hack4HongKong
                 return null;
             }
         }
-        public static void CreateNewCompany(string companyName, string description, string[] tags)
+        public static void CreateNewCompany(string companyName, string description, string[] tags, string alternatives, bool approved = false)
         {
             var allCompanies = GetAllCompanies();
             for (int x = 0; x < allCompanies.Length; x++)
@@ -47,12 +47,17 @@ namespace Hack4HongKong
                 CompanyName = companyName,
                 Description = description,
                 Tags = tags,
-                CompanyID = newID
+                CompanyID = newID,
+                Approved = approved,
+                Alternatives = alternatives
             };
 
             InsertData("Companies/" + newID, newItem);
         }
-
+        public static void UpdateCompany(DatabaseObjectTemplate company)
+        {
+            UpdateData("Companies/" + company.CompanyID, company);
+        }
         public static void DeleteCompany(int companyID)
         { 
             DeleteData("Companies/" + companyID);
@@ -113,6 +118,7 @@ namespace Hack4HongKong
     {
         public bool Approved { get; set; }
         public string CompanyName { get; set; }
+        public string Alternatives { get; set; }
         public int CompanyID { get; set; }
         public string Description { get; set; }
         public string[] Tags { get; set; }

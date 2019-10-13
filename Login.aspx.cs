@@ -18,7 +18,7 @@ namespace Hack4HongKong
         {
             if (inputEmail.Value.ToString().Equals("h4hk@gmail.com") && inputPassword.Value.ToString().Equals("mhacks12"))
             {
-                //redirect to access page
+                Response.Redirect("AccessPage.aspx");
             }
             else
             {

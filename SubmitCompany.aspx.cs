@@ -13,12 +13,13 @@ namespace Hack4HongKong
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            successAlert.Visible = false;
             //SendMail("kade", "Google", "IT WORKS");
             //AddCompany("Facebook", "Other Description", new string[] { "tag1", "tag2" });
         }
-        private void AddCompany(string companyName, string description, string[] tags)
+        private void AddCompany(string companyName, string description, string[] tags, string alternative)
         {
-            DatabaseInterface.CreateNewCompany(companyName, description, tags);
+            DatabaseInterface.CreateNewCompany(companyName, description, tags, alternative);
         }
 
         protected void addTagToListBox_Click(object sender, EventArgs e)
@@ -39,9 +40,10 @@ namespace Hack4HongKong
                 tags.Add(item.Text);
             }*/
 
-            AddCompany(companyNameTxtBox.Text, descTextBox.Text, null);
+            AddCompany(companyNameTxtBox.Text, descTextBox.Text, null, alternativeTxtBox.Text);
             companyNameTxtBox.Text = String.Empty;
             descTextBox.Text = String.Empty;
+            successAlert.Visible = true;
         }
         /*
         private void SendMail(string recipientName, string company, string desc)
