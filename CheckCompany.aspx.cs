@@ -50,14 +50,19 @@ namespace Hack4HongKong
 
                     //protected string companyName = allCompanies[x].CompanyName;
                     txtValueA.Text +=
-                       "<div class=\"panel panel-primary\">" +
+                       "<br />"+
+                        "<div class=\"panel panel-primary\">" +
                            "<div class=\"panel-heading\">" +
                                " <b>" + allCompaniesWithinPicture[x].CompanyName + "</b> " +
                            "</div>" +
                            "<div class=\"panel-body\">" +
                                " " + allCompaniesWithinPicture[x].Description + " " +
                             "</div>" +
-                        "</div>";
+                            "<br />"+
+                            "<div class=\"panel-body\">"+
+                            "<b> Alternatives: </b>" + allCompaniesWithinPicture[x].Alternatives+ " " +
+                            "</div>"+
+                            "</div>";
 
 
 
@@ -71,7 +76,7 @@ namespace Hack4HongKong
                     txtValueA.Text +=
                         "<div class=\"panel panel-primary\">" +
                            "<div class=\"panel-heading\">" +
-                               " <b> We did not find anything about" + Important_Methods.CheckforLogo.getMatches(path)[i] + "</b> " +
+                               " <b> We did not find anything about " + Important_Methods.CheckforLogo.getMatches(path)[i] + ". We will keep you updated if any changes occur!</b> " +
                            "</div>";
                 }
                 if (Important_Methods.CheckforLogo.getMatches(path).Count<=0)

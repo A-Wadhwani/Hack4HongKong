@@ -39,7 +39,7 @@ namespace Hack4HongKong
             {
                 tags.Add(item.Text);
             }*/
-            // AddCompany(companyNameTxtBox.Value.ToString(), descTextBox.Value.ToString(), null, alternativeTxtBox.Value.ToString());
+            AddCompany(companyNameTxtBox.Value.ToString(), descTextBox.Value.ToString(), null, alternativeTxtBox.Value.ToString());
             companyNameTxtBox.Value = String.Empty;
             alternativeTxtBox.Value = String.Empty;
             descTextBox.Value = String.Empty;
