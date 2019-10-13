@@ -23,13 +23,13 @@ namespace Hack4HongKong
 
         protected void submit_Click(object sender, EventArgs e)
         {
-            string path = MapPath(@"~/LogoImages/image.jpg");
+            string path = MapPath(@"~/Logos/image.jpg");
             txtValueA.Text = "";
             if (upload.PostedFile.ContentLength > 0)
             {
                 failedAlert.Visible = false;
                 FileLabel.InnerText = upload.PostedFile.FileName;
-                image1.Src = "LogoImages/image.jpg";
+                image1.Src = "Logos/image.jpg";
                 image1.Visible = true;
                 upload.PostedFile.SaveAs(path);
                 string fileName = upload.PostedFile.FileName;

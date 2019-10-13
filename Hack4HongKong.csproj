@@ -192,6 +192,11 @@
     <Content Include="EmailVerification\Event.html" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <Content Include="Logos\icon_v1_trans.png" />
+    <Content Include="Logos\icon_v1_white.png" />
+    <Content Include="Logos\icon_v2_trans.png" />
+    <Content Include="Logos\icon_v2_white.png" />
+    <Content Include="Logos\image.jpg" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -224,9 +229,9 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="Login.aspx" />
+    <Content Include="My Project 25680-6d24c8bb9131.json" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <Content Include="blizzard.webp" />
-    <Content Include="My Project 47807-3e6bf2f7f02f.json" />
     <None Include="Properties\PublishProfiles\Hack4HongKong - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Important_Methods\WebForm1.aspx" />
