@@ -64,6 +64,22 @@ namespace Hack4HongKong
                     // mainTable.Rows.Add(tr);
                     //companyList.Items.Add(allCompanies[x].CompanyName);
                 }
+                if (Important_Methods.CheckforLogo.CompaniesFoundInPicture(path).Length <= 0 && Important_Methods.CheckforLogo.getMatches(path).Count>0) 
+                {
+                    var CompanyName = Important_Methods.CheckforLogo.getMatches(path);
+                    for (int i=0;i<CompanyName.Count;i++)
+                    txtValueA.Text +=
+                        "<div class=\"panel panel-primary\">" +
+                           "<div class=\"panel-heading\">" +
+                               " <b> We did not find anything about" + Important_Methods.CheckforLogo.getMatches(path)[i] + "</b> " +
+                           "</div>";
+                }
+                if (Important_Methods.CheckforLogo.getMatches(path).Count<=0)
+                    txtValueA.Text +=
+                        "<div class=\"panel panel-primary\">" +
+                           "<div class=\"panel-heading\">" +
+                               " <b> We could not detect a brand in the photo </b> " +
+                           "</div>";
             }
             else
             {

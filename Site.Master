@@ -55,7 +55,7 @@
         <a class="nav-link" href="/CurrentListings">Companies to Boycott</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/Important_Methods/WebForm2">Check your Products</a>
+        <a class="nav-link" href="/CheckCompany">Check your Products</a>
       </li>
     </ul>
     <ul class="nav navbar-nav justify-content-end">

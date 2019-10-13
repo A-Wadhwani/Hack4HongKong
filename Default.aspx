@@ -11,7 +11,7 @@
             <p class="text-center">Fair minded, big hearted people hold the majority of power. <br>
               Boycott corporations that remain silent over China's authoritarian takeover of Hong Kong.&nbsp;</p>
             <div class="container-fluid text-center">
-                <a class="btn btn-lg btn-primary" href="Important_Methods/WebForm2.aspx" role="button">Check your Company</a>
+                <a class="btn btn-lg btn-primary" href="CheckCompany.aspx" role="button">Check your Company</a>
             </div>
 			  <br /> 
 			  <br />

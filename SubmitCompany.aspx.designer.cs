@@ -7,11 +7,13 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Hack4HongKong {
-    
-    
-    public partial class SubmitCompany {
-        
+namespace Hack4HongKong
+{
+
+
+    public partial class SubmitCompany
+    {
+
         /// <summary>
         /// companyNameTxtBox control.
         /// </summary>
@@ -19,8 +21,8 @@ namespace Hack4HongKong {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox companyNameTxtBox;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlInputText companyNameTxtBox;
+
         /// <summary>
         /// alternativeTxtBox control.
         /// </summary>
@@ -28,8 +30,8 @@ namespace Hack4HongKong {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox alternativeTxtBox;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea alternativeTxtBox;
+
         /// <summary>
         /// descTextBox control.
         /// </summary>
@@ -37,8 +39,8 @@ namespace Hack4HongKong {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox descTextBox;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlInputText descTextBox;
+
         /// <summary>
         /// submitBtn control.
         /// </summary>
@@ -46,8 +48,8 @@ namespace Hack4HongKong {
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button submitBtn;
-        
+        protected global::System.Web.UI.HtmlControls.HtmlButton submitBtn;
+
         /// <summary>
         /// successAlert control.
         /// </summary>
@@ -56,7 +58,7 @@ namespace Hack4HongKong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl successAlert;
-        
+
         /// <summary>
         /// tagSubmissionTextBox control.
         /// </summary>
@@ -65,7 +67,7 @@ namespace Hack4HongKong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox tagSubmissionTextBox;
-        
+
         /// <summary>
         /// addTagToListBox control.
         /// </summary>
@@ -74,7 +76,7 @@ namespace Hack4HongKong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button addTagToListBox;
-        
+
         /// <summary>
         /// tagListBox control.
         /// </summary>
@@ -83,7 +85,7 @@ namespace Hack4HongKong {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.ListBox tagListBox;
-        
+
         /// <summary>
         /// removeTagFromListBox control.
         /// </summary>
