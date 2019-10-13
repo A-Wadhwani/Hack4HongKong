@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <a>Hello ##RecipientName##,</a>
+    <br />
+    <a>Someone is requesting that ##Company## be added into the database. </a>
+    <br />
+    <a>##Description##</a>
+    <br />
+    <button id="acceptBtn" onclick="acceptedClick()">Accept Addition?</button>
+    <input type="hidden" id="compID" value="1">
+</body>
+</html>
+<script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyCyitDcuwvZSedzQxbPmYFHB3528gbeW0Y",
+    authDomain: "hack4hk.firebaseapp.com",
+    databaseURL: "https://hack4hk.firebaseio.com",
+    projectId: "hack4hk",
+    storageBucket: "hack4hk.appspot.com",
+    messagingSenderId: "575295979274",
+    appId: "1:575295979274:web:c6ff5ba38eabd1200ac4f3"
+  };
+
+    var fb = firebase.initializeApp(firebaseConfig);
+    // Initialize Firebase
+    function acceptedClick() {
+        firebase.auth().signInWithEmailAndPassword("random@gmail.com", "abc123");
+        var x = document.getElementById("compID").value;
+        pushNewVote(x);
+    }
+    function pushNewVote(currentVoteValue) {
+
+        console.log("made it to 1:" + currentVoteValue);
+        var target;
+        var allData = fb.database().ref("Companies").once("value");
+        for (var x = 0; x < allData.length; x++) {
+            if (allData[x].ID == currentVoteValue)
+                target = allData[x].approved;
+        }
+        console.log("made it to 2:" + currentVoteValue);
+
+
+        return fb.database()
+            .ref("Companies/" + currentVoteValue + "/Approved")
+            .set("true");
+        
+        console.log("made it to 3???");
+    }
+</script>
