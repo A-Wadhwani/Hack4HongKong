@@ -36,11 +36,11 @@ namespace Hack4HongKong
 
                 //protected string companyName = allCompanies[x].CompanyName;
                 txtValueA.Text +=
-                   "<div class=\"panel panel-primary\">" +
-                       "<div class=\"panel-heading\">" +
+                   "<div class=\"card\">" +
+                       "<div class=\"card bg-primary text-white\">" +
                            " <b>" + data[x].CompanyName + "</b> " +
                        "</div>" +
-                       "<div class=\"panel-body\">" +
+                       "<div class=\"card-body\">" +
                            " " + data[x].Description + " " +
                         "</div>" +
                     "</div>";

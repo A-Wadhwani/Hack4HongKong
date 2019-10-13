@@ -35,10 +35,9 @@
             <asp:Button runat="server" ID="searchBtn" Text="Search" OnClick="searchBtn_Click" />
         </div>
     </div>
-
+    
     <br />
     <hr />
-    <br />
 
     <asp:Literal runat="server" id="txtValueA" EnableViewState="false" />
     <!--
