@@ -14,12 +14,12 @@
                 <input type="text" class="form-control" id="companyNameTxtBox" runat="server" placeholder="Name of Company">
               </div>
               <div class="form-group">
-                <label for="alternativeTxtBox">Why Should This Company be Boycotted?</label>
-                <textarea class="form-control" id="alternativeTxtBox" rows="3" runat="server" placeholder="Please Elaborate"></textarea>
+                <label for="descTextBox">Why Should This Company be Boycotted?</label>
+                <textarea class="form-control" id="descTextBox" rows="3" runat="server" placeholder="Please Elaborate"></textarea>
                </div>
               <div class="form-group">
-                <label for="descTextBox">Alternatives</label>
-                <input type="text" class="form-control" id="descTextBox" runat="server" placeholder="Alternatives to the Company">
+                <label for="alternativeTxtBox">Alternatives</label>
+                <input type="text" class="form-control" id="alternativeTxtBox" runat="server" placeholder="Alternatives to the Company">
               </div>
                 <button type="submit" class="btn btn-primary" ID="submitBtn" runat="server" OnServerClick="submitBtn_Click">Submit</button>
             </form>

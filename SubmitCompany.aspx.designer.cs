@@ -24,22 +24,22 @@ namespace Hack4HongKong
         protected global::System.Web.UI.HtmlControls.HtmlInputText companyNameTxtBox;
 
         /// <summary>
-        /// alternativeTxtBox control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlTextArea alternativeTxtBox;
-
-        /// <summary>
         /// descTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText descTextBox;
+        protected global::System.Web.UI.HtmlControls.HtmlTextArea descTextBox;
+
+        /// <summary>
+        /// alternativeTxtBox control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputText alternativeTxtBox;
 
         /// <summary>
         /// submitBtn control.
